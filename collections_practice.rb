@@ -33,3 +33,11 @@ def find_a(array)
     element[0] == "a"
  end
 end
+
+def sum_array(array)
+  array.inject{ |sum, n| sum + n }
+end
+
+def add_s(array)
+  array.each_with_index.collect{|word, i| word << "s" unless i ==2}
+end
